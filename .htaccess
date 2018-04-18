@@ -1,0 +1,27 @@
+RewriteEngine on
+
+RewriteRule ^$ media.php?module=home [L]
+RewriteRule ^pemesanan\.html$ media.php?module=pesanan&id=$1 [L]
+RewriteRule ^about\.html$ media.php?module=about&id=$1 [L]
+
+RewriteRule ^login\.html$ media.php?module=form_login&id=$1 [L]
+RewriteRule ^daftar\.html$ media.php?module=daftar&id=$1 [L]
+RewriteRule ^hubungi-kami\.html$ media.php?module=hubungikami&id=$1 [L]
+RewriteRule ^hubungi-aksi\.html$ media.php?module=hubungiaksi&id=$1 [L]
+RewriteRule ^lapangan\.html$ media.php?module=sewa&id=$1 [L]
+RewriteRule ^lihat-detail-(.*)\.html$ media.php?module=detaillapangan&id=$1 [L]
+
+
+RewriteRule ^sewa-lapangan-(.*)\.html$ media.php?module=sewalapangan&id=$1 [L]
+RewriteRule ^aksi-pesan\.html$ media.php?module=aksipesan&id=$1 [L]
+RewriteRule ^laporan-pemesanan\.html$ media.php?module=laporanpemesanan&id=$1 [L]
+RewriteRule ^detail-pemesanan-(.*)\.html$ media.php?module=detailpemesanan&id=$1 [L]
+RewriteRule ^konfirmasi-pembayaran-(.*)\.html$ media.php?module=konfirmasipembayaran&id=$1 [L]
+RewriteRule ^aksi-konfirmasi\.html$ media.php?module=aksikonfirmasi&id=$1 [L]
+RewriteRule ^cek-sewa-lapangan\.html$ media.php?module=ceksewalapangan&id=$1 [L]
+RewriteRule ^sewa-lapangan-(.*)-jam-(.*)\.html$ media.php?module=filtersewalapangan&sewalapangan=$1&jam=$2 [L]
+
+RewriteRule ^kelola-profile\.html$ media.php?module=kelolaprofile&id=$1 [L]
+RewriteRule ^ganti-password\.html$ media.php?module=gantipassword&id=$1 [L]
+RewriteRule ^jadwal\.html$ media.php?module=jadwal&id=$1 [L]
+Options All -Indexes
